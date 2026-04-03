@@ -1,0 +1,26 @@
+# 1D array
+a = np.array([1, 2, 3, 4, 5])
+print("1D array:", a)
+
+# 2D array
+b = np.array([[1, 2, 3],
+              [4, 5, 6]])
+print("2D array:\n", b)
+
+# 3D array
+c = np.array([[[1, 2], [3, 4]],
+              [[5, 6], [7, 8]]])
+print("3D array:\n", c)
+
+# Reshaping (1D to 2D)
+r = a.reshape(5, 1)
+print("Reshaped array:\n", r)
+
+# Slicing
+print("Slice of 1D array:", a[1:4])
+print("Slice of 2D array:", b[:, 1])   # second column
+
+# Indexing
+print("Element from 1D:", a[2])
+print("Element from 2D:", b[1, 2])
+print("Element from 3D:", c[0, 1, 1])
